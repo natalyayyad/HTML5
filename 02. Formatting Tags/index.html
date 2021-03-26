@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>First HTML document</title>
+  <title>First HTML document</title>
+  <!-- Meta: defines metadata about an HTML Document, machine pearsable, used by seach engines-->
+  <meta charset="utf-8">
+  <meta name="description" content="HTML5 Course">
+  <meta name="keywords" content="HTML5">
+  <meta name="author" content="Nataly Ayyad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- style: defines style information for a document-->
+  <style media="screen">
+    body{
+      background: blue
+    }
+    h1{
+      color: white;
+    }
+    span {
+      color: red;
+    }
+  </style>
+
 </head>
 <body>
 <!--H1 - H6 Headings 1 -6 -->
@@ -11,9 +31,14 @@
 <h4>This is Heading 4</h4>
 <h5>This is Heading 5</h5>
 <h6>This is Heading 6</h6>
+<!-- span: defines a section in a document -->
+<h1>Learn<span>Tech</span></h1>
 
 <!-- Paragraph tag + BOLD + Underlined -->
 <p><b><u>This</u> is a Paragraph tag</b></p>
+
+<!-- dialog: defines a dialog box or window-->
+<dialog open>This is an open Dialog Window </dialog>
 
 <!-- Break Tag -->
 <br>
@@ -35,10 +60,70 @@
   </head>
   <body>
     <!-- Strong Header == Bold Header -->
-<h1><strong>Samples</strong></h1>
+    <h1><strong>Samples</strong></h1>
   </body>
 </html>
 </code>
 
+<!-- details: defines additional details that the user can view or hide-->
+<details open>
+  this is details
+</details>
+<!-- summary: defines a visible heading for a <details> element-->
+<details open>
+  <summary>this is a summary</summary>
+</details>
+
+<!-- data: adds a machine-readable translation of a given content-->
+<data value="23543">this is data</data>
+
+<!-- lists -->
+<ul>
+  <li>This is an item</li>
+</ul>
+
+<ol>
+  <li>this is an item 1</li>
+</ol>
+
+<!-- description list-->
+<dl>
+  <dt>This is a term name</dt>
+  <dt>this is a second term name</dt>
+  <dd>This is a description</dd>
+</dl>
+
+<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" usemap="#mymap">
+<map name="mymap">
+  <area shape="circle" coords="30,40,270,350" href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+</map>
+
+<canvas id="canvas" width="300" height="300"></canvas>
+<figure>
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo" usemap="#mymap">
+  <figcaption>this is a fig caption</figcaption>
+</figure>
+
+<form class="" action="index.html" method="post">
+  <input type="text" name="" value="">
+  <br>
+  <input type="button" name="" value="">
+  <br>
+  <input type="checkbox" name="" value="">
+  <br>
+  <input type="color" name="" value="">
+  <br>
+  <input type="date" name="" value="">
+  <br>
+  <input type="file" name="" value="">
+  <br>
+  <input type="image" name="" value="">
+  <br>
+  <input type="month" name="" value="">
+  <br>
+  <textarea name="name" rows="8" cols="80"></textarea>
+  <br>
+</form>
 </body>
+
 </html>
